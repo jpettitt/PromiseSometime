@@ -44,4 +44,4 @@ promiseSome([p1, p2, p3, p4], 3500).then(value => {
 
 ```
 
-`promiseSome()` has the same "fail fast" behavior as `Promise.all()` *if* the rejection happens before the timeout.
+`promiseSome()` has the same "fail fast" behavior as `Promise.all()` if the rejection happens before the timeout.
