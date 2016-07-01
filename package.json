@@ -1,7 +1,7 @@
 {
   "name": "promise-sometime",
   "version": "0.0.2",
-  "description": "Like Promise.some but withe a timout instead of a count",
+  "description": "Like Promise.all but with a timout",
   "main": "index.js",
   "scripts": {
     "test": "mocha --bail -t 10000",
