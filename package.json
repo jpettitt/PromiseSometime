@@ -1,0 +1,35 @@
+{
+  "name": "promise-sometime",
+  "version": "0.0.1",
+  "description": "Like Promise.some but withe a timout instead of a count",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --bail -t 10000",
+    "lint": "eslint ."
+  },
+  "bugs": {
+    "url": "https://github.com/jpettitt/PromiseSometime/issues/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://https://github.com/jpettitt/PromiseSometime.git"
+  },
+  "keywords": [
+      "timeout",
+      "promise"
+  ],
+  "author": {
+    "name": "John Pettitt",
+    "email": "j@p.tt"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1"
+  }
+}
