@@ -1,6 +1,8 @@
 # promise-sometime
 
-Promise.all() behavior but with a timout instead of a count.
+[![Build Status](https://travis-ci.org/jpettitt/PromiseSometime.svg?branch=master)](https://travis-ci.org/jpettitt/PromiseSometime)
+
+Promise.all() behavior but with a timout.
 
 ## Installation
 
@@ -8,9 +10,9 @@ Promise.all() behavior but with a timout instead of a count.
 
 ## Usage
 
-### sometime([promises], timeout)
+### promiseSome([promises], timeout)
 
-Waits for `promises` until either they all resolve, one rejects, or the `timeout` ms has elapsed.
+Waits for `promises` until either they all resolve, one rejects, or `timeout` ms has elapsed.
 
 Returns and array or results in the same way as `Promise.all()`.  If the timout is reached the array
 will have `undefined` for any promises that have not yet resolved.
@@ -31,16 +33,17 @@ var p3 = new Promise((resolve, reject) => {
 var p4 = new Promise((resolve, reject) => {
   setTimeout(resolve, 4000, "four");
 });
+var p5 = "five"
 
 
-promiseSome([p1, p2, p3, p4], 3500).then(value => { 
+promiseSome([p1, p2, p3, p4, p5], 3500).then(value => { 
   console.log(value);
 }, function(reason) {
   console.log(reason)
 });
 
 //From console:
-// [ "one", "two", "three", undefined ]
+// [ "one", "two", "three", undefined, "five" ]
 
 ```
 
