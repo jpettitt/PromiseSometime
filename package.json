@@ -1,6 +1,6 @@
 {
   "name": "promise-sometime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Like Promise.some but withe a timout instead of a count",
   "main": "index.js",
   "scripts": {
@@ -15,8 +15,8 @@
     "url": "git://https://github.com/jpettitt/PromiseSometime.git"
   },
   "keywords": [
-      "timeout",
-      "promise"
+    "timeout",
+    "promise"
   ],
   "author": {
     "name": "John Pettitt",
