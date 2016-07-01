@@ -1,6 +1,6 @@
 {
   "name": "promise-sometime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Like Promise.all but with a timout",
   "main": "index.js",
   "scripts": {
