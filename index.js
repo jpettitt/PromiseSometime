@@ -24,6 +24,6 @@ module.exports = function(promises, timeout) {
       result.push(promise.isFulfilled() ? promise.value() : undefined);
     });
     return result;
-  })
+  });
   
 };
